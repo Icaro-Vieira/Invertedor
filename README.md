@@ -9,5 +9,5 @@
 </p>
 
 <p align="center">
-<a href="https://icaro-vieira.github.io/invertedor/">Visite o projeto online</a>
+<a href="https://icaro-vieira.github.io/Invertedor/">Visite o projeto online</a>
 </p>
