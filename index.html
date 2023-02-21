@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Link CDN VueJs v2 -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  
+  <title>Invertedor</title>
+</head>
+<body>
+  <div id="app">
+    <h1>Invertedor</h1>
+    <input type="text" v-model="nome" placeholder="...">
+    <button @click="inverterNome">Inverter</button>
+    <p>Resultado: <strong>{{ nomeInvertido }}</strong></p>
+  </div>
+  
+  <script>
+    new Vue({
+      el: "#app",
+      data: {
+        nome: "",
+        nomeInvertido: ""
+      },
+      methods: {
+        inverterNome() {
+          this.nomeInvertido = this.nome.split("").reverse().join("")
+        },
+      },
+    });
+  </script>
+</body>
+</html>
